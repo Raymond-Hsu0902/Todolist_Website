@@ -1,0 +1,239 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.bg{
+    width: auto;
+    height: 100vh;
+    background-image: linear-gradient(174deg, #FFD370 2%, #FFD370 46%, #FFFFFF 46%, #FFFFFF 100%, #E8E8E8 100%);
+}
+
+.container{
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+.title{
+    font-size: 48px;
+color: #333333;
+letter-spacing: 8.75px;
+margin-bottom: 26px;
+margin-top: 48px;
+}
+
+.input{
+    max-width: 500px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 26px;
+}
+
+input:focus{outline:none}
+
+.text{
+    display: inline;
+    background: #FFFFFF;
+    border: 0px;    
+    width: 100%;
+    height: 48px;
+    margin-left: 24px;
+}
+
+.save{
+    display: inline;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    color:#FFFFFF;
+    border: 0px;
+    border-radius: 10px;
+    margin-right: 4px;
+    cursor: pointer;
+    font-size: 32px;
+}
+
+.list{
+    max-width: 500px;
+    background: #FFFFFF;
+    margin-top: 0;
+    padding: 16px;
+}
+.list li{
+    list-style: none;
+    font-size: 16px;
+color: #333333;
+letter-spacing: 0.62px;
+display: flex;
+align-items: center;
+cursor: pointer;
+
+
+}
+
+.list label{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #EFEFEF;
+    justify-content: space-between;
+    padding: 16px 0;
+    cursor: pointer;
+}
+
+.listText{
+    width: 100%;
+    display: flex;
+}
+
+.listText:hover  .delete{
+    display: block;
+}
+
+
+
+.delete{
+    display: none;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.filter{
+    max-width: 500px;
+    background: #FFFFFF;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+.filter input{
+    font-size: 14px;
+    padding: 16px;
+    color: #9F9A91;
+    letter-spacing: 0.7px;
+    background-color: transparent;
+    border-radius: 10px 10px 0 0;
+    border: 0;
+    width: 33.3%;
+    cursor: pointer;;
+    border-bottom:1px solid #9F9A91;
+
+}
+
+.checkbox{
+    border: 1px solid #333333;
+border-radius: 5px;
+width: 16px;
+height: 16px;
+position: relative;
+margin-right: 16px;
+}
+
+.checkbox:checked + span + .listText label {
+    text-decoration: line-through;
+    color: #9f9a91;
+}
+
+.list span{
+    display: none;
+}
+
+.checkbox:checked {
+    display: none;
+}
+
+.checkbox:checked + span {
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    color: #ffd370;
+    font-size: 16px;
+    margin-right: 16px;
+}
+
+.count{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+
+}
+
+.box{
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+}
+
+.countNum{
+    font-size: 14px;
+    color: #333333;
+    letter-spacing: 0.7px;
+}
+
+.clear{
+    font-size: 14px;
+    color: #9F9A91;
+    letter-spacing: 0.7px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.clear:hover{
+    color: #FFD370;
+    font-weight: 500;
+}
+
+.cursor{
+    font-size: 14px;
+    color: #333333!important;
+    border-bottom: 2px solid #333333!important;
+    letter-spacing: 0.7px;
+}
